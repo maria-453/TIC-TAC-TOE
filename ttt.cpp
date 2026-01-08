@@ -5,20 +5,11 @@ using namespace std;
 int main(){
 char board[3][3]={{' ',' ', ' '},{' ',' ',' '},{' ',' ',' '}};
 const char playerX ='X';
-#include <iostream>
-#include <string>
+const char player0 = '0';
+char currentplayer = playerX; int r = -1; int c = -1;
+char winner = ' ';
 
-using namespace std;
-
-
-
-    char board[3][3] = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
-    const char playerX = 'X';
-    const char player0 = '0';
-    char currentplayer = playerX; int r = -1; int c = -1;
-    char winner = ' ';
-
-    for (int i = 0; i < 9; i++) {
+for (int i = 0; i < 9; i++) {
 
         cout << "   |   |   " << endl;
         cout << " " << board[0][0] << " | " << board[0][1] << " | " << board[0][2] << endl;
